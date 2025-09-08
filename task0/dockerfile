@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+# maj paquets
+RUN apt-get update
+# maj logiciels
+RUN apt-get upgrade -y
+# commande affiche le message
+CMD ["echo", "Hello, World!"]
