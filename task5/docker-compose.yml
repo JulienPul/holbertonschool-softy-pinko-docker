@@ -18,9 +18,9 @@ services:
     build:
       context: ./proxy
       dockerfile: dockerfile
-      image: softy-pinko-proxy:task5
-      ports:
-        - "80:80"
-      depends_on:
+    image: softy-pinko-proxy:task5
+    ports:
+      - "80:80"
+    depends_on:
         - front-end
         - back-end
